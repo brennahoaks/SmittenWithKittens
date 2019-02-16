@@ -1,10 +1,5 @@
-document.getElementById("weatherSubmit").addEventListener("click", function(event) {
+document.getElementById("smittenSubmit").addEventListener("click", function(event) {
   event.preventDefault();
-  const value = document.getElementById("weatherInput").value;
-  if (value === "")
-    return;
-  console.log(value);
-
   const url = "https://aws.random.cat/meow";
   fetch(url)
     .then(function(response) {
@@ -16,7 +11,7 @@ document.getElementById("weatherSubmit").addEventListener("click", function(even
 
     results += json.file;
 
-    document.getElementById("weatherResults").innerHTML = results;
+    document.getElementById("Kittens").innerHTML = results;
     });
 
     
