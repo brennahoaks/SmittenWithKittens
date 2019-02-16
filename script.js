@@ -11,5 +11,13 @@ document.getElementById("weatherSubmit").addEventListener("click", function(even
       return response.json();
     }).then(function(json) {
       console.log(json);
+
+      let results = "";
+
+    results += json.file;
+
+    document.getElementById("weatherResults").innerHTML = results;
     });
+
+    
 });
