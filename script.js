@@ -5,11 +5,11 @@ document.getElementById("weatherSubmit").addEventListener("click", function(even
     return;
   console.log(value);
 
-  const url = "http://api.openweathermap.org/data/2.5/weather?q=" + value + ",US&units=imperial" + "&APPID=APIKEY";
+  const url = "https://aws.random.cat/meow";
   fetch(url)
     .then(function(response) {
       return response.json();
-    }).then(function(json) {	
+    }).then(function(json) {
       console.log(json);
     });
 });
