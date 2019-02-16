@@ -9,7 +9,7 @@ document.getElementById("smittenSubmit").addEventListener("click", function(even
 
       let results = "";
 
-    results += '<img src=' + json.file + ' alt="Trulli" width="500" height="333">';
+    results += '<img src=' + json.file + '>';
 
     document.getElementById("Kittens").innerHTML = results;
     });

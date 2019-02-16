@@ -10,7 +10,8 @@
     justify-content: center;
   }
   body {
- 
+    align-content: center;
+    background-image: purple;
   }
   a{
       color: black;
