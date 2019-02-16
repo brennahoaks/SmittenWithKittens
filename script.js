@@ -14,10 +14,10 @@ document.getElementById("weatherSubmit").addEventListener("click", function(even
 
       let results = "";
 
-    results += json.file;
+    results += '<img src=' + json.file + ' alt="Trulli" width="500" height="333">';
 
     document.getElementById("weatherResults").innerHTML = results;
     });
 
-    
+
 });
